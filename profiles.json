@@ -1,0 +1,21 @@
+{
+    "profiles": {},
+    "traits": {
+        "fontsize":{
+            "desc":"Font size selection",
+            "val":[10,11,12],
+            "type":"range"
+        },
+        "documentClass":{
+            "desc":"Documentclass selection",
+            "val":["article","report","book","slides","letter","proc","minimal","memoir","beamer"],
+            "type":"enum"
+        },
+        "math":{
+            "desc":"Selection of common math packages",
+            "val":"\\usepackage{amsmath, amssymb, amsfonts}",
+            "type":"code"
+        }
+
+    }
+}
