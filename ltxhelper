@@ -1,0 +1,11 @@
+#!/usr/bin/python
+from argparse import ArgumentParser
+parser = ArgumentParser(
+    prog='ltxhelper',
+    description='Manages LaTeX presets and creation of new projects.',
+    epilog='Bottom text')
+
+parser.add_argument('preset', help='Which preset to use')
+parser.add_argument('project', help='Location and name of the project')
+parser.add_argument('-p', action='store_true' , help='Interpret the project argument as path')
+parser.parse_args()
